@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AmiiboCardsView: View {
     let gridItems = Array(repeating: GridItem(.flexible()), count: 2)
+    private let amiiboListUseCase = AmiiboSceneDIContainer.shared.makeLoadAmiiboListUseCase()
     
     var body: some View {
         ScrollView {
@@ -18,6 +19,11 @@ struct AmiiboCardsView: View {
                 }
             }
             .padding(10)
+        }
+        .onAppear {
+            Task {
+                let array = try await amiiboListUseCase.excute()
+            }
         }
     }
 }

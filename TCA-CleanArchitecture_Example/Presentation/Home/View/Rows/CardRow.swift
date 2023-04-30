@@ -19,7 +19,7 @@ struct CardRow: View {
             Spacer()
         }
         .aspectRatio(CGSize(width: 1, height: 1.25), contentMode: .fill)
-        .background(Color.red)
+        .background(Color.white)
         .cornerRadius(8)
         .shadow(color: .gray, radius: 4, x: 0, y: 4)
     }

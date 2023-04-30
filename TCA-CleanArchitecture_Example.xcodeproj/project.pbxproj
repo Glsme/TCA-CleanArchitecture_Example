@@ -102,13 +102,13 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		85C50FE029FE4FE900F33913 /* Main */ = {
+		85C50FE029FE4FE900F33913 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				85C50FE129FE500000F33913 /* AmiiboCardsView.swift */,
-				85C50FE329FE515900F33913 /* Rows */,
+				85C5100029FEB17100F33913 /* Reducer */,
+				85C50FFF29FEB16700F33913 /* View */,
 			);
-			path = Main;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		85C50FE329FE515900F33913 /* Rows */ = {
@@ -211,6 +211,22 @@
 			path = DIContainer;
 			sourceTree = "<group>";
 		};
+		85C50FFF29FEB16700F33913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85C50FE129FE500000F33913 /* AmiiboCardsView.swift */,
+				85C50FE329FE515900F33913 /* Rows */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85C5100029FEB17100F33913 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
 		85D578DB29F6311100E5BD20 = {
 			isa = PBXGroup;
 			children = (
@@ -274,7 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				85D5791C29F6331000E5BD20 /* ContentView.swift */,
-				85C50FE029FE4FE900F33913 /* Main */,
+				85C50FE029FE4FE900F33913 /* Home */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
