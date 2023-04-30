@@ -18,6 +18,7 @@
 		85C50FFE29FEADF300F33913 /* AmiiboSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FFD29FEADF300F33913 /* AmiiboSceneDIContainer.swift */; };
 		85C5100329FEB1DE00F33913 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 85C5100229FEB1DE00F33913 /* ComposableArchitecture */; };
 		85C5100529FEB27600F33913 /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C5100429FEB27600F33913 /* HomeReducer.swift */; };
+		85C5100829FEB7A000F33913 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 85C5100729FEB7A000F33913 /* Kingfisher */; };
 		85D578E829F6311100E5BD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D578E729F6311100E5BD20 /* AppDelegate.swift */; };
 		85D578EA29F6311100E5BD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D578E929F6311100E5BD20 /* SceneDelegate.swift */; };
 		85D578F129F6311200E5BD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D578F029F6311200E5BD20 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C5100829FEB7A000F33913 /* Kingfisher in Frameworks */,
 				85C5100329FEB1DE00F33913 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +320,7 @@
 			name = "TCA-CleanArchitecture_Example";
 			packageProductDependencies = (
 				85C5100229FEB1DE00F33913 /* ComposableArchitecture */,
+				85C5100729FEB7A000F33913 /* Kingfisher */,
 			);
 			productName = "TCA-CleanArchitecture_Example";
 			productReference = 85D578E429F6311100E5BD20 /* TCA-CleanArchitecture_Example.app */;
@@ -393,6 +396,7 @@
 			mainGroup = 85D578DB29F6311100E5BD20;
 			packageReferences = (
 				85C5100129FEB1DE00F33913 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				85C5100629FEB7A000F33913 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 85D578E529F6311100E5BD20 /* Products */;
 			projectDirPath = "";
@@ -798,6 +802,14 @@
 				minimumVersion = 0.9.0;
 			};
 		};
+		85C5100629FEB7A000F33913 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -805,6 +817,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 85C5100129FEB1DE00F33913 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		85C5100729FEB7A000F33913 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85C5100629FEB7A000F33913 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
