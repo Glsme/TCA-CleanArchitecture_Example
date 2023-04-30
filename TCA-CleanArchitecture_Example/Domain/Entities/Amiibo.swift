@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Amiibo: Codable {
+struct Amiibo: Codable, Hashable {
     let image: String
     let name: String
 }
+
+typealias AmiiboList = [Amiibo]

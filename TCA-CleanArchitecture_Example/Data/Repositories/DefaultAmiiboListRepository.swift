@@ -8,7 +8,7 @@
 import Foundation
 
 final class DefaultAmiiboListRepository: AmiiboListRepository {
-    func requestAmiiboList() async throws -> [Amiibo] {
+    func requestAmiiboList() async throws -> AmiiboList {
         let url = URL(string: Endpoint.baseURL + "amiibo/")!
         let (data, _) = try await URLSession.shared.data(from: url)
         let response = try JSONDecoder().decode(AmiiboListResponseDTO.self, from: data)

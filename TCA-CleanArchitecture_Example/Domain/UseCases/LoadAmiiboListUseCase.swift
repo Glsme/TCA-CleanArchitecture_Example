@@ -8,7 +8,7 @@
 import Foundation
 
 protocol LoadAmiiboListUseCase {
-    func excute() async throws -> [Amiibo]
+    func excute() async throws -> AmiiboList
 }
 
 final class DefaultLoadAmiiboListUseCase: LoadAmiiboListUseCase {
@@ -18,7 +18,7 @@ final class DefaultLoadAmiiboListUseCase: LoadAmiiboListUseCase {
         self.amiiboListRepository = amiiboListRepository
     }
     
-    func excute() async throws -> [Amiibo] {
+    func excute() async throws -> AmiiboList {
         return try await amiiboListRepository.requestAmiiboList()
     }
 }

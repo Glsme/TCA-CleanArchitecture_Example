@@ -14,7 +14,7 @@ struct AmiiboListResponseDTO: Codable {
 }
 
 extension AmiiboListResponseDTO {
-    func toDomain() -> [Amiibo] {
+    func toDomain() -> AmiiboList {
         return amiibo.map { $0.toDomain() }
     }
 }

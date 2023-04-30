@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+import ComposableArchitecture
+
 struct ContentView: View {
     var body: some View {
-        AmiiboCardsView()
+        AmiiboCardsView(store: Store(initialState: HomeReducer.State(), reducer: HomeReducer()))
     }
 }
 

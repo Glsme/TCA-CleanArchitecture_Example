@@ -7,22 +7,27 @@
 
 import SwiftUI
 
+import ComposableArchitecture
+
 struct AmiiboCardsView: View {
     let gridItems = Array(repeating: GridItem(.flexible()), count: 2)
-    private let amiiboListUseCase = AmiiboSceneDIContainer.shared.makeLoadAmiiboListUseCase()
+    let store: StoreOf<HomeReducer>
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: gridItems, spacing: 10) {
-                ForEach(0..<8) { index in
-                    CardRow()
+        WithViewStore(store, observe: { $0 }) { viewStore in
+            ScrollView {
+                LazyVGrid(columns: gridItems, spacing: 10) {
+                    ForEach(viewStore.amiibos, id: \.self) { item in
+                        CardRow(name: item.name)
+                    }
+//                    ForEach(0..<8) { index in
+//                        CardRow()
+//                    }
                 }
+                .padding(10)
             }
-            .padding(10)
-        }
-        .onAppear {
-            Task {
-                let array = try await amiiboListUseCase.excute()
+            .onAppear {
+                viewStore.send(.loadAmiiboList)
             }
         }
     }
@@ -30,6 +35,7 @@ struct AmiiboCardsView: View {
 
 struct AmiiboCardView_Previews: PreviewProvider {
     static var previews: some View {
-        AmiiboCardsView()
+        AmiiboCardsView(store: Store(initialState: HomeReducer.State(),
+                                     reducer: HomeReducer()))
     }
 }

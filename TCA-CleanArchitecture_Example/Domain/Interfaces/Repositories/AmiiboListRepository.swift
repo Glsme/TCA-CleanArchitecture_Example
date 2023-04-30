@@ -8,5 +8,5 @@
 import Foundation
 
 protocol AmiiboListRepository {
-    func requestAmiiboList() async throws -> [Amiibo]
+    func requestAmiiboList() async throws -> AmiiboList
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CardRow: View {
+    let name: String
+    
     var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 4)
@@ -15,7 +17,8 @@ struct CardRow: View {
                 .aspectRatio(1, contentMode: .fit)
                 .padding(6)
             Spacer()
-            Text("이름")
+            Text(name)
+                .font(.footnote)
             Spacer()
         }
         .aspectRatio(CGSize(width: 1, height: 1.25), contentMode: .fill)
@@ -27,6 +30,6 @@ struct CardRow: View {
 
 struct CardRow_Previews: PreviewProvider {
     static var previews: some View {
-        CardRow()
+        CardRow(name: "Mario")
     }
 }
