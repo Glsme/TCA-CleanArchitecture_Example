@@ -7,14 +7,18 @@
 
 import SwiftUI
 
+import Kingfisher
+
 struct CardRow: View {
     let name: String
+    let imageURL: String
     
     var body: some View {
         VStack {
-            RoundedRectangle(cornerRadius: 4)
-                .foregroundColor(.blue)
-                .aspectRatio(1, contentMode: .fit)
+            KFImage(URL(string: imageURL)!)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipped()
                 .padding(6)
             Spacer()
             Text(name)
@@ -30,6 +34,6 @@ struct CardRow: View {
 
 struct CardRow_Previews: PreviewProvider {
     static var previews: some View {
-        CardRow(name: "Mario")
+        CardRow(name: "Mario", imageURL: "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png")
     }
 }

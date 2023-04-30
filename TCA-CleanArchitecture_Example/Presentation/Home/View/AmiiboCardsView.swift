@@ -18,11 +18,8 @@ struct AmiiboCardsView: View {
             ScrollView {
                 LazyVGrid(columns: gridItems, spacing: 10) {
                     ForEach(viewStore.amiibos, id: \.self) { item in
-                        CardRow(name: item.name)
+                        CardRow(name: item.name, imageURL: item.image)
                     }
-//                    ForEach(0..<8) { index in
-//                        CardRow()
-//                    }
                 }
                 .padding(10)
             }
