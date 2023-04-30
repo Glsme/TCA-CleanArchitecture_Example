@@ -1,5 +1,5 @@
 //
-//  AmiiboCardView.swift
+//  AmiiboCardsView.swift
 //  TCA-CleanArchitecture_Example
 //
 //  Created by Seokjune Hong on 2023/04/30.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AmiiboCardView: View {
+struct AmiiboCardsView: View {
     let gridItems = Array(repeating: GridItem(.flexible()), count: 2)
     
     var body: some View {
@@ -24,6 +24,6 @@ struct AmiiboCardView: View {
 
 struct AmiiboCardView_Previews: PreviewProvider {
     static var previews: some View {
-        AmiiboCardView()
+        AmiiboCardsView()
     }
 }
