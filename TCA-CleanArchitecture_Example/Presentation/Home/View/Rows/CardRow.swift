@@ -15,17 +15,22 @@ struct CardRow: View {
     
     var body: some View {
         VStack {
-            KFImage(URL(string: imageURL)!)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .clipped()
-                .padding(6)
+            ZStack {
+                Spacer()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                KFImage(URL(string: imageURL)!)
+                    .resizable()
+                    .scaledToFit()
+    //                .aspectRatio(CGSize(width: 1, height: 1.15), contentMode: .fit)
+                    .padding(6)
+            }
+            
             Spacer()
             Text(name)
                 .font(.footnote)
             Spacer()
         }
-        .aspectRatio(CGSize(width: 1, height: 1.25), contentMode: .fill)
+        .aspectRatio(CGSize(width: 1, height: 1.28), contentMode: .fill)
         .background(Color.white)
         .cornerRadius(8)
         .shadow(color: .gray, radius: 4, x: 0, y: 4)
