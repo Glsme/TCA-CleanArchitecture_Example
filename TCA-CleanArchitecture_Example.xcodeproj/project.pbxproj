@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85C50FE229FE500000F33913 /* AmiiboCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE129FE500000F33913 /* AmiiboCardsView.swift */; };
+		85C50FE529FE51FD00F33913 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE429FE51FD00F33913 /* CardRow.swift */; };
 		85D578E829F6311100E5BD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D578E729F6311100E5BD20 /* AppDelegate.swift */; };
 		85D578EA29F6311100E5BD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D578E929F6311100E5BD20 /* SceneDelegate.swift */; };
 		85D578F129F6311200E5BD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D578F029F6311200E5BD20 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85C50FE129FE500000F33913 /* AmiiboCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboCardsView.swift; sourceTree = "<group>"; };
+		85C50FE429FE51FD00F33913 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
 		85D578E429F6311100E5BD20 /* TCA-CleanArchitecture_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCA-CleanArchitecture_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D578E729F6311100E5BD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85D578E929F6311100E5BD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85C50FDF29FE4F9E00F33913 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				85D578F029F6311200E5BD20 /* Assets.xcassets */,
+				85D578F229F6311200E5BD20 /* LaunchScreen.storyboard */,
+				85D578F529F6311200E5BD20 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		85C50FE029FE4FE900F33913 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				85C50FE129FE500000F33913 /* AmiiboCardsView.swift */,
+				85C50FE329FE515900F33913 /* Rows */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		85C50FE329FE515900F33913 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				85C50FE429FE51FD00F33913 /* CardRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
 		85D578DB29F6311100E5BD20 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +128,9 @@
 		85D578E629F6311100E5BD20 /* TCA-CleanArchitecture_Example */ = {
 			isa = PBXGroup;
 			children = (
+				85C50FDF29FE4F9E00F33913 /* Resource */,
 				85D5791729F6315E00E5BD20 /* Application */,
 				85D5791829F6316600E5BD20 /* Presentation */,
-				85D578F029F6311200E5BD20 /* Assets.xcassets */,
-				85D578F229F6311200E5BD20 /* LaunchScreen.storyboard */,
-				85D578F529F6311200E5BD20 /* Info.plist */,
 			);
 			path = "TCA-CleanArchitecture_Example";
 			sourceTree = "<group>";
@@ -144,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				85D5791C29F6331000E5BD20 /* ContentView.swift */,
+				85C50FE029FE4FE900F33913 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +310,8 @@
 			files = (
 				85D578E829F6311100E5BD20 /* AppDelegate.swift in Sources */,
 				85D578EA29F6311100E5BD20 /* SceneDelegate.swift in Sources */,
+				85C50FE529FE51FD00F33913 /* CardRow.swift in Sources */,
+				85C50FE229FE500000F33913 /* AmiiboCardsView.swift in Sources */,
 				85D5791D29F6331000E5BD20 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,12 +483,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3K4KWAG7KD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TCA-CleanArchitecture_Example/Info.plist";
+				INFOPLIST_FILE = "TCA-CleanArchitecture_Example/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,12 +514,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3K4KWAG7KD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TCA-CleanArchitecture_Example/Info.plist";
+				INFOPLIST_FILE = "TCA-CleanArchitecture_Example/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
