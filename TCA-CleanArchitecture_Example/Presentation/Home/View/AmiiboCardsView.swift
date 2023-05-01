@@ -10,18 +10,21 @@ import SwiftUI
 import ComposableArchitecture
 
 struct AmiiboCardsView: View {
-    let gridItems = Array(repeating: GridItem(.flexible()), count: 2)
+    let gridItems = Array(repeating: GridItem(.flexible(), spacing: 20), count: 2)
     let store: StoreOf<HomeReducer>
     
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
-            ScrollView {
-                LazyVGrid(columns: gridItems, spacing: 10) {
-                    ForEach(viewStore.amiibos, id: \.self) { item in
-                        CardRow(name: item.name, imageURL: item.image)
+            NavigationView {
+                ScrollView {
+                    LazyVGrid(columns: gridItems, spacing: 20) {
+                        ForEach(viewStore.amiibos, id: \.self) { item in
+                            CardRow(name: item.name, imageURL: item.image)
+                        }
                     }
+                    .padding(20)
                 }
-                .padding(10)
+                .navigationTitle("Amiibo")
             }
             .onAppear {
                 viewStore.send(.loadAmiiboList)
