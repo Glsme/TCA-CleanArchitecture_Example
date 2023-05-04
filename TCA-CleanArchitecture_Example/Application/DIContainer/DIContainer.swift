@@ -1,5 +1,5 @@
 //
-//  AmiiboSceneDIContainer.swift
+//  DIContainer.swift
 //  TCA-CleanArchitecture_Example
 //
 //  Created by Seokjune Hong on 2023/04/30.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-final class AmiiboSceneDIContainer {
-    static let shared = AmiiboSceneDIContainer()
+final class DIContainer {
+    static let shared = DIContainer()
 }
 
 //MARK: - UseCase
 
-extension AmiiboSceneDIContainer {
+extension DIContainer {
     func makeLoadAmiiboListUseCase() -> LoadAmiiboListUseCase {
         return DefaultLoadAmiiboListUseCase(amiiboListRepository: makeAmiiboListRepository())
     }
@@ -21,7 +21,7 @@ extension AmiiboSceneDIContainer {
 
 //MARK: - Repository
 
-extension AmiiboSceneDIContainer {
+extension DIContainer {
     func makeAmiiboListRepository() -> AmiiboListRepository {
         return DefaultAmiiboListRepository()
     }

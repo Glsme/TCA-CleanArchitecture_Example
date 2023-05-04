@@ -10,7 +10,7 @@ import Foundation
 import ComposableArchitecture
 
 struct HomeReducer: ReducerProtocol {
-    private let amiiboListUseCase = AmiiboSceneDIContainer.shared.makeLoadAmiiboListUseCase()
+    private let amiiboListUseCase = DIContainer.shared.makeLoadAmiiboListUseCase()
     
     struct State: Equatable {
         var amiibos: AmiiboList = []
