@@ -5,13 +5,12 @@
 //  Created by Seokjune Hong on 2023/04/30.
 //
 
-import Foundation
+import SwiftUI
 
 import ComposableArchitecture
 
 struct HomeReducer: ReducerProtocol {
-    private let amiiboListUseCase = DIContainer.shared.makeLoadAmiiboListUseCase()
-    
+    @Environment(\.injected) var container: DIContainer
     struct State: Equatable {
         var amiibos: AmiiboList = []
     }
@@ -26,7 +25,7 @@ struct HomeReducer: ReducerProtocol {
         case .loadAmiiboList:
             return .task {
                 await .loadAmiiboListResponse(TaskResult {
-                    try await amiiboListUseCase.excute()
+                    try await container.interfacers.amiiboListRepository.requestAmiiboList()
                 })
             }
         case let .loadAmiiboListResponse(.success(response)):

@@ -10,13 +10,21 @@ import SwiftUI
 import ComposableArchitecture
 
 struct ContentView: View {
+    let container: DIContainer
+    
+    init(container: DIContainer) {
+        self.container = container
+    }
+    
     var body: some View {
-        AmiiboCardsView(store: Store(initialState: HomeReducer.State(), reducer: HomeReducer()))
+        AmiiboCardsView()
+            .environment(\.injected, container)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(container: DIContainer(appStore: AppStore(),
+                                           interfacers: DIContainer.Interfacers.stub))
     }
 }

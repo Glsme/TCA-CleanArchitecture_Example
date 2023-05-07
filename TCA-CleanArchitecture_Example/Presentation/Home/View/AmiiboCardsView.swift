@@ -10,11 +10,11 @@ import SwiftUI
 import ComposableArchitecture
 
 struct AmiiboCardsView: View {
+    @Environment(\.injected) var container: DIContainer
     let gridItems = Array(repeating: GridItem(.flexible(), spacing: 20), count: 2)
-    let store: StoreOf<HomeReducer>
     
     var body: some View {
-        WithViewStore(store, observe: { $0 }) { viewStore in
+        WithViewStore(container.appStore.homeReducer, observe: { $0 }) { viewStore in
             NavigationView {
                 ScrollView {
                     LazyVGrid(columns: gridItems, spacing: 20) {
@@ -35,7 +35,6 @@ struct AmiiboCardsView: View {
 
 struct AmiiboCardView_Previews: PreviewProvider {
     static var previews: some View {
-        AmiiboCardsView(store: Store(initialState: HomeReducer.State(),
-                                     reducer: HomeReducer()))
+        AmiiboCardsView()
     }
 }
