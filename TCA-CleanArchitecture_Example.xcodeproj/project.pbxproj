@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8537FA5D2A18B1C8003A4986 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537FA5C2A18B1C8003A4986 /* DetailView.swift */; };
+		8537FA602A18B32C003A4986 /* DetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537FA5F2A18B32C003A4986 /* DetailReducer.swift */; };
 		85C50FE229FE500000F33913 /* AmiiboCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE129FE500000F33913 /* AmiiboCardsView.swift */; };
 		85C50FE529FE51FD00F33913 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE429FE51FD00F33913 /* CardRow.swift */; };
 		85C50FEA29FE58C700F33913 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE929FE58C700F33913 /* Endpoint.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		8537FA5C2A18B1C8003A4986 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8537FA5F2A18B32C003A4986 /* DetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReducer.swift; sourceTree = "<group>"; };
 		85C50FE129FE500000F33913 /* AmiiboCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboCardsView.swift; sourceTree = "<group>"; };
 		85C50FE429FE51FD00F33913 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
 		85C50FE929FE58C700F33913 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		8537FA5A2A18B1A2003A4986 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				8537FA5E2A18B318003A4986 /* Reducer */,
 				8537FA5B2A18B1B7003A4986 /* View */,
 			);
 			path = Detail;
@@ -118,6 +121,14 @@
 				8537FA5C2A18B1C8003A4986 /* DetailView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8537FA5E2A18B318003A4986 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				8537FA5F2A18B32C003A4986 /* DetailReducer.swift */,
+			);
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 		85C50FDF29FE4F9E00F33913 /* Resource */ = {
@@ -466,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85C50FF329FEA84100F33913 /* Amiibo.swift in Sources */,
+				8537FA602A18B32C003A4986 /* DetailReducer.swift in Sources */,
 				85D578E829F6311100E5BD20 /* AppDelegate.swift in Sources */,
 				85C50FF129FE59A000F33913 /* AmiiboListRepository.swift in Sources */,
 				85D578EA29F6311100E5BD20 /* SceneDelegate.swift in Sources */,
