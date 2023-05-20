@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8537FA5D2A18B1C8003A4986 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537FA5C2A18B1C8003A4986 /* DetailView.swift */; };
 		85C50FE229FE500000F33913 /* AmiiboCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE129FE500000F33913 /* AmiiboCardsView.swift */; };
 		85C50FE529FE51FD00F33913 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE429FE51FD00F33913 /* CardRow.swift */; };
 		85C50FEA29FE58C700F33913 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE929FE58C700F33913 /* Endpoint.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8537FA5C2A18B1C8003A4986 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		85C50FE129FE500000F33913 /* AmiiboCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboCardsView.swift; sourceTree = "<group>"; };
 		85C50FE429FE51FD00F33913 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
 		85C50FE929FE58C700F33913 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -102,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8537FA5A2A18B1A2003A4986 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8537FA5B2A18B1B7003A4986 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8537FA5B2A18B1B7003A4986 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8537FA5C2A18B1C8003A4986 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		85C50FDF29FE4F9E00F33913 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +322,7 @@
 			children = (
 				85D5791C29F6331000E5BD20 /* ContentView.swift */,
 				85C50FE029FE4FE900F33913 /* Home */,
+				8537FA5A2A18B1A2003A4986 /* Detail */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -455,6 +474,7 @@
 				85C5100D2A03FA6500F33913 /* AppStore.swift in Sources */,
 				85C50FF529FEA88B00F33913 /* LoadAmiiboListUseCase.swift in Sources */,
 				85C5100B2A03F61A00F33913 /* AppEnvironment.swift in Sources */,
+				8537FA5D2A18B1C8003A4986 /* DetailView.swift in Sources */,
 				85C50FE529FE51FD00F33913 /* CardRow.swift in Sources */,
 				85C50FE229FE500000F33913 /* AmiiboCardsView.swift in Sources */,
 				85C50FEA29FE58C700F33913 /* Endpoint.swift in Sources */,

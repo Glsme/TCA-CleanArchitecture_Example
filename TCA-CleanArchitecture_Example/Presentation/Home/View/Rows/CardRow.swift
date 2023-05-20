@@ -21,13 +21,13 @@ struct CardRow: View {
                 KFImage(URL(string: imageURL)!)
                     .resizable()
                     .scaledToFit()
-    //                .aspectRatio(CGSize(width: 1, height: 1.15), contentMode: .fit)
                     .padding(6)
             }
             
             Spacer()
             Text(name)
                 .font(.footnote)
+                .foregroundColor(.black)
             Spacer()
         }
         .aspectRatio(CGSize(width: 1, height: 1.28), contentMode: .fill)

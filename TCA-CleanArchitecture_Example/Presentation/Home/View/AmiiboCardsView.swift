@@ -19,7 +19,11 @@ struct AmiiboCardsView: View {
                 ScrollView {
                     LazyVGrid(columns: gridItems, spacing: 20) {
                         ForEach(viewStore.amiibos, id: \.self) { item in
-                            CardRow(name: item.name, imageURL: item.image)
+                            NavigationLink {
+                                DetailView()
+                            } label: {
+                                CardRow(name: item.name, imageURL: item.image)
+                            }
                         }
                     }
                     .padding(20)
