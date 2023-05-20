@@ -14,8 +14,7 @@ struct AppEnvironment {
 extension AppEnvironment {
     static func bootStrap() -> AppEnvironment {
         let appStore = AppStore()
-        let interfacers = DIContainer.Interfacers.stub
-        let diContainer = DIContainer(appStore: appStore, interfacers: interfacers)
+        let diContainer = DIContainer(appStore: appStore)
         
         return AppEnvironment(container: diContainer)
     }

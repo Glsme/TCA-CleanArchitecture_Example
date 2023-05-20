@@ -21,7 +21,6 @@
 		85C5100829FEB7A000F33913 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 85C5100729FEB7A000F33913 /* Kingfisher */; };
 		85C5100B2A03F61A00F33913 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C5100A2A03F61A00F33913 /* AppEnvironment.swift */; };
 		85C5100D2A03FA6500F33913 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C5100C2A03FA6500F33913 /* AppStore.swift */; };
-		85C510102A07DEE600F33913 /* InterfacersContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C5100F2A07DEE600F33913 /* InterfacersContainer.swift */; };
 		85D578E829F6311100E5BD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D578E729F6311100E5BD20 /* AppDelegate.swift */; };
 		85D578EA29F6311100E5BD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D578E929F6311100E5BD20 /* SceneDelegate.swift */; };
 		85D578F129F6311200E5BD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D578F029F6311200E5BD20 /* Assets.xcassets */; };
@@ -62,7 +61,6 @@
 		85C5100429FEB27600F33913 /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
 		85C5100A2A03F61A00F33913 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		85C5100C2A03FA6500F33913 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
-		85C5100F2A07DEE600F33913 /* InterfacersContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfacersContainer.swift; sourceTree = "<group>"; };
 		85D578E429F6311100E5BD20 /* TCA-CleanArchitecture_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCA-CleanArchitecture_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D578E729F6311100E5BD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85D578E929F6311100E5BD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -237,7 +235,6 @@
 			children = (
 				85C5100C2A03FA6500F33913 /* AppStore.swift */,
 				85C50FFD29FEADF300F33913 /* DIContainer.swift */,
-				85C5100F2A07DEE600F33913 /* InterfacersContainer.swift */,
 			);
 			path = Injected;
 			sourceTree = "<group>";
@@ -455,7 +452,6 @@
 				85D578EA29F6311100E5BD20 /* SceneDelegate.swift in Sources */,
 				85C50FFB29FEAA9B00F33913 /* AmiiboListResponseDTO.swift in Sources */,
 				85C50FF829FEA98300F33913 /* DefaultAmiiboListRepository.swift in Sources */,
-				85C510102A07DEE600F33913 /* InterfacersContainer.swift in Sources */,
 				85C5100D2A03FA6500F33913 /* AppStore.swift in Sources */,
 				85C50FF529FEA88B00F33913 /* LoadAmiiboListUseCase.swift in Sources */,
 				85C5100B2A03F61A00F33913 /* AppEnvironment.swift in Sources */,

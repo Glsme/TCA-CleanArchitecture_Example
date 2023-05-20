@@ -24,7 +24,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(container: DIContainer(appStore: AppStore(),
-                                           interfacers: DIContainer.Interfacers.stub))
+        ContentView(container: DIContainer(appStore: AppStore()))
     }
 }

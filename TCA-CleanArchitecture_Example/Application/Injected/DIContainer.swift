@@ -11,16 +11,15 @@ import ComposableArchitecture
 
 struct DIContainer: EnvironmentKey {
     let appStore: AppStore
-    let interfacers: Interfacers
+//    let interfacers: Interfacers
     
-    init(appStore: AppStore, interfacers: Interfacers) {
+    init(appStore: AppStore) {
         self.appStore = appStore
-        self.interfacers = interfacers
     }
     
     static var defaultValue: Self { Self.default }
     
-    private static let `default` = Self(appStore: AppStore(), interfacers: .stub)
+    private static let `default` = Self(appStore: AppStore())
 }
 
 extension EnvironmentValues {
