@@ -35,7 +35,7 @@ extension EnvironmentValues {
 //MARK: - UseCase
 
 extension DIContainer {
-    func makeLoadAmiiboListUseCase() -> LoadAmiiboListUseCase {
+    static func makeLoadAmiiboListUseCase() -> LoadAmiiboListUseCase {
         return DefaultLoadAmiiboListUseCase(amiiboListRepository: makeAmiiboListRepository())
     }
 }
@@ -43,7 +43,7 @@ extension DIContainer {
 //MARK: - Repository
 
 extension DIContainer {
-    func makeAmiiboListRepository() -> AmiiboListRepository {
+    static func makeAmiiboListRepository() -> AmiiboListRepository {
         return DefaultAmiiboListRepository()
     }
 }

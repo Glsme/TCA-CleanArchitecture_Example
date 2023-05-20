@@ -10,7 +10,8 @@ import SwiftUI
 import ComposableArchitecture
 
 struct HomeReducer: ReducerProtocol {
-    @Environment(\.injected) var container: DIContainer
+    var loadAmiiboListUseCase = DIContainer.makeLoadAmiiboListUseCase()
+    
     struct State: Equatable {
         var amiibos: AmiiboList = []
     }
@@ -25,7 +26,7 @@ struct HomeReducer: ReducerProtocol {
         case .loadAmiiboList:
             return .task {
                 await .loadAmiiboListResponse(TaskResult {
-                    try await container.interfacers.amiiboListRepository.requestAmiiboList()
+                    try await loadAmiiboListUseCase.excute()
                 })
             }
         case let .loadAmiiboListResponse(.success(response)):
