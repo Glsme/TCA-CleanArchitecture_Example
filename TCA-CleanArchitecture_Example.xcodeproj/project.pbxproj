@@ -11,6 +11,7 @@
 		8537FA602A18B32C003A4986 /* DetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537FA5F2A18B32C003A4986 /* DetailReducer.swift */; };
 		8537FA622A18B7E4003A4986 /* AmiiboInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537FA612A18B7E4003A4986 /* AmiiboInfoRepository.swift */; };
 		8537FA642A18B82B003A4986 /* LoadAmiiboInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537FA632A18B82B003A4986 /* LoadAmiiboInfoUseCase.swift */; };
+		8537FA662A18BA34003A4986 /* DefaultAmiiboInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537FA652A18BA34003A4986 /* DefaultAmiiboInfoRepository.swift */; };
 		85C50FE229FE500000F33913 /* AmiiboCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE129FE500000F33913 /* AmiiboCardsView.swift */; };
 		85C50FE529FE51FD00F33913 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE429FE51FD00F33913 /* CardRow.swift */; };
 		85C50FEA29FE58C700F33913 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C50FE929FE58C700F33913 /* Endpoint.swift */; };
@@ -57,6 +58,7 @@
 		8537FA5F2A18B32C003A4986 /* DetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReducer.swift; sourceTree = "<group>"; };
 		8537FA612A18B7E4003A4986 /* AmiiboInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboInfoRepository.swift; sourceTree = "<group>"; };
 		8537FA632A18B82B003A4986 /* LoadAmiiboInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAmiiboInfoUseCase.swift; sourceTree = "<group>"; };
+		8537FA652A18BA34003A4986 /* DefaultAmiiboInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAmiiboInfoRepository.swift; sourceTree = "<group>"; };
 		85C50FE129FE500000F33913 /* AmiiboCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboCardsView.swift; sourceTree = "<group>"; };
 		85C50FE429FE51FD00F33913 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
 		85C50FE929FE58C700F33913 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				85C50FF729FEA98300F33913 /* DefaultAmiiboListRepository.swift */,
+				8537FA652A18BA34003A4986 /* DefaultAmiiboInfoRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				8537FA642A18B82B003A4986 /* LoadAmiiboInfoUseCase.swift in Sources */,
 				85C5100D2A03FA6500F33913 /* AppStore.swift in Sources */,
 				85C50FF529FEA88B00F33913 /* LoadAmiiboListUseCase.swift in Sources */,
+				8537FA662A18BA34003A4986 /* DefaultAmiiboInfoRepository.swift in Sources */,
 				85C5100B2A03F61A00F33913 /* AppEnvironment.swift in Sources */,
 				8537FA622A18B7E4003A4986 /* AmiiboInfoRepository.swift in Sources */,
 				8537FA5D2A18B1C8003A4986 /* DetailView.swift in Sources */,
