@@ -11,4 +11,5 @@ import ComposableArchitecture
 
 struct AppStore {
     var homeReducer = Store(initialState: HomeReducer.State(), reducer: HomeReducer())
+    var detailReducer = Store(initialState: DetailReducer.State(), reducer: DetailReducer())
 }
