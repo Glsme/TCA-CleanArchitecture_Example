@@ -37,6 +37,10 @@ extension DIContainer {
     static func makeLoadAmiiboListUseCase() -> LoadAmiiboListUseCase {
         return DefaultLoadAmiiboListUseCase(amiiboListRepository: makeAmiiboListRepository())
     }
+    
+    static func makeLoadAmiiboInfoUseCase() -> LoadAmiiboInfoUseCase {
+        return DefaultLoadAmiiboInfoUseCase(amiiboInfoRepository: makeAmiiboInfoRepository())
+    }
 }
 
 //MARK: - Repository
@@ -44,5 +48,9 @@ extension DIContainer {
 extension DIContainer {
     static func makeAmiiboListRepository() -> AmiiboListRepository {
         return DefaultAmiiboListRepository()
+    }
+    
+    static func makeAmiiboInfoRepository() -> AmiiboInfoRepository {
+        return DefaultAmiiboInfoRepository()
     }
 }
