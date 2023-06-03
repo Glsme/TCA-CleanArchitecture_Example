@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DetailView: View {
+    let name: String
+    
     var body: some View {
         Text("Hello, World!")
     }
@@ -15,6 +17,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(name: "mario")
     }
 }
