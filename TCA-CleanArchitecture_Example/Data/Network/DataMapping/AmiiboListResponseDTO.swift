@@ -61,6 +61,7 @@ enum AmiiboSeriesResponseDTO: String, Codable {
     case superNintendoWorld = "Super Nintendo World"
     case superSmashBros = "Super Smash Bros."
     case the8BitMario = "8-bit Mario"
+    case xenobladeChronicles3 = "Xenoblade Chronicles 3"
     case yoshiSWoollyWorld = "Yoshi's Woolly World"
     case yuGiOh = "Yu-Gi-Oh!"
 }
